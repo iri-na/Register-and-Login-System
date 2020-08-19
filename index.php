@@ -1,4 +1,10 @@
 <?php
 require_once 'core/init.php';
 
-echo Config::get('mysql/host'); // '127.0.0.1'
+$user = DB::getInstance()->query("SELECT username FROM users WHERE username = ?", array('irina'));
+
+if ($user->error()) {
+    echo 'No user';
+} else {
+    echo 'OK!';
+}

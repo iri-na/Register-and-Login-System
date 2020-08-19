@@ -11,10 +11,11 @@ class Config {
                     $config = $config[$bit];
                 }
                 else {
+                    echo 'path not found';
                     return false;
                 }
             }
-            return $config; //returns value of config in this case '127.0.0.1'
+            return $config;
         }
         else {
             return false;
