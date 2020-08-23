@@ -15,7 +15,7 @@ require_once 'core/init.php';
 
 //$user = DB::getInstance()->insert('users', array(
 //    'id' => '9',
-//    'username' => 'hong',
+//    'username' => 'jenna',
 //    'password' => 'password',
 //    'salt' => '',
 //    'name' => '',
@@ -23,6 +23,6 @@ require_once 'core/init.php';
 //    'group' => '1'
 //));
 
-$user = DB::getInstance()->update('users', '3', array(
-    'password' => 'hi!!'
-));
+//$user = DB::getInstance()->update('users', '3', array(
+//    'password' => 'hi!!'
+//));

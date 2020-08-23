@@ -116,7 +116,6 @@ class DB {
             return true;
         }
         else {
-            print_r($this->query($sql, $fields));
             echo 'there is an error';
             return false;
         }
