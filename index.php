@@ -26,3 +26,7 @@ require_once 'core/init.php';
 //$user = DB::getInstance()->update('users', '3', array(
 //    'password' => 'hi!!'
 //));
+
+if(Session::exists('success')) {
+    echo Session::flash('success');
+}
