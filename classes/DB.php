@@ -38,10 +38,10 @@ class DB {
                 $this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
                 $this->_count = $this->_query->rowCount();
             } else {
+                echo 'Error! Cannot execute.';
                 $this->_error = true;
             }
         }
-//        print_r($this->_results);
         return $this;
     }
 
@@ -88,14 +88,15 @@ class DB {
             $sql = "INSERT INTO {$table} (`" . implode('`, `', $keys) . "`) VALUES ({$values})";
 //            echo $sql;
 
-            if (!($this->query($sql, $fields))->error()) {
+            if (!$this->query($sql, $fields)->error()) {
                 return true;
             }
             else {
                 echo 'there is an error';
             }
+        } else {
+            return false;
         }
-        return false;
     }
 
     public function update($table, $id, $fields) {

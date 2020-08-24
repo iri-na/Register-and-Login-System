@@ -32,6 +32,23 @@ if(Input::exists()) {
         ));
 
         if ($validation->passed()) {
+            $user = new User();
+
+            $salt = Hash::salt(32);
+
+            try {
+                $user->create(array(
+                        'id' => 14,
+                        'username' => Input::get('username'),
+                        'password' => Hash::make(Input::get('password'), $salt),
+                        'salt' => $salt,
+                        'name' => Input::get('name'),
+                        'joined' => date("Y-m-d H:i:s"),
+                        'group' => 1
+                ));
+            } catch(Exception $e) {
+                die($e->getMessage());
+            }
             Session::flash('success', 'You have been registered successfully!');
             header('Location: index.php');
         } else {
