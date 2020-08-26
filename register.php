@@ -38,19 +38,18 @@ if(Input::exists()) {
 
             try {
                 $user->create(array(
-                        'id' => 14,
                         'username' => Input::get('username'),
                         'password' => Hash::make(Input::get('password'), $salt),
                         'salt' => $salt,
                         'name' => Input::get('name'),
                         'joined' => date("Y-m-d H:i:s"),
-                        'group' => 1
+                        'group' => 2
                 ));
             } catch(Exception $e) {
                 die($e->getMessage());
             }
-            Session::flash('success', 'You have been registered successfully!');
-            header('Location: index.php');
+            Session::flash('home', 'You have been registered and can now log in!');
+            Redirect::to('index.php');
         } else {
             foreach ($validation->errors() as $error) {
                 echo $error, '<br>';
