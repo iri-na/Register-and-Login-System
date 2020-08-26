@@ -21,15 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cfb1c4e1-4e14-4b76-8499-e50fb00f0588" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Cookie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changepassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/changepassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/errors/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/errors/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597628623033</updated>
       <workItem from="1597628625356" duration="4033000" />
-      <workItem from="1597769311568" duration="55566000" />
+      <workItem from="1597769311568" duration="61147000" />
     </task>
     <servers />
   </component>
